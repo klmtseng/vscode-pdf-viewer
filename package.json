@@ -3,10 +3,10 @@
   "displayName": "PDF Viewer",
   "description": "A lightweight PDF viewer for VS Code",
   "version": "0.1.0",
-  "publisher": "your-publisher-name",
+  "publisher": "klmtseng",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/vscode-pdf-viewer"
+    "url": "https://github.com/klmtseng/vscode-pdf-viewer"
   },
   "engines": {
     "vscode": "^1.75.0"
