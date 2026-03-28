@@ -1,0 +1,74 @@
+{
+  "name": "vscode-pdf-viewer",
+  "displayName": "PDF Viewer",
+  "description": "A lightweight PDF viewer for VS Code",
+  "version": "0.1.0",
+  "publisher": "your-publisher-name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/vscode-pdf-viewer"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "pdf",
+    "viewer",
+    "preview"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "pdfViewer.preview",
+        "displayName": "PDF Viewer",
+        "selector": [
+          {
+            "filenamePattern": "*.pdf"
+          }
+        ],
+        "priority": "default"
+      }
+    ],
+    "configuration": {
+      "title": "PDF Viewer",
+      "properties": {
+        "pdfViewer.defaultZoom": {
+          "type": "string",
+          "default": "auto",
+          "enum": [
+            "auto",
+            "page-fit",
+            "page-width",
+            "50",
+            "75",
+            "100",
+            "125",
+            "150",
+            "200"
+          ],
+          "description": "Default zoom level when opening a PDF"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "prepare-pdfjs": "node scripts/prepare-pdfjs.js",
+    "build": "npm run prepare-pdfjs && npm run compile",
+    "package": "npx @vscode/vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@types/vscode": "^1.75.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^4.0.379"
+  }
+}
