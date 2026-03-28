@@ -1,6 +1,6 @@
 {
-  "name": "vscode-pdf-viewer",
-  "displayName": "PDF Viewer",
+  "name": "vscode-pdf-viewer-lite",
+  "displayName": "PDF Viewer Lite",
   "description": "A lightweight PDF viewer for VS Code",
   "version": "0.2.0",
   "publisher": "klmtseng",
