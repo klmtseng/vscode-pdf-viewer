@@ -2,6 +2,17 @@
 
 A lightweight PDF viewer extension for Visual Studio Code, built on [PDF.js](https://mozilla.github.io/pdf.js/).
 
+## Install
+
+Available on the VS Code Marketplace as **[PDF Viewer Lite](https://marketplace.visualstudio.com/items?itemName=klmtseng.vscode-pdf-viewer-lite)**:
+
+- In VS Code: Extensions panel → search "PDF Viewer Lite" → Install
+- Or from the command line:
+
+```bash
+code --install-extension klmtseng.vscode-pdf-viewer-lite
+```
+
 ## Features
 
 - **Automatic PDF opening** — registered as the default editor for `.pdf` files
